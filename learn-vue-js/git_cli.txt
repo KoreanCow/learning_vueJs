@@ -1,0 +1,18 @@
+git init	-> .git
+
+git clone <git 주소> -> 클론
+
+git remote -v -> 저장소 URL
+git remote add <저장소 이름> <URL>.git 	-> 저장소 URL 추가
+git remote delete <저장소 이름> 		-> 저장소URL 삭제
+git remote set-url <저장소 이름> <URL>.git 	-> 저장소 URL 수정
+
+git status -> 바뀐거
+
+git add <file name> -> 저장소 올릴 준비
+git add . -> 모두 올리기
+git commit -m "커밋 내용" -> add한 수정된 파일을 저장소에 올리 것을 확정
+
+git push <저장소 이름> master -> 깃허브에 저장
+
+git pull < 저장소 이름> master -> 받아오기
