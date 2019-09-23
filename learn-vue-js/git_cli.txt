@@ -1,18 +1,18 @@
 git init	-> .git
 
-git clone <git ÁÖ¼Ò> -> Å¬·Ğ
+git clone <git ì£¼ì†Œ> -> í´ë¡ 
 
-git remote -v -> ÀúÀå¼Ò URL
-git remote add <ÀúÀå¼Ò ÀÌ¸§> <URL>.git 	-> ÀúÀå¼Ò URL Ãß°¡
-git remote delete <ÀúÀå¼Ò ÀÌ¸§> 		-> ÀúÀå¼ÒURL »èÁ¦
-git remote set-url <ÀúÀå¼Ò ÀÌ¸§> <URL>.git 	-> ÀúÀå¼Ò URL ¼öÁ¤
+git remote -v -> ì €ì¥ì†Œ URL
+git remote add <ì €ì¥ì†Œ ì´ë¦„> <URL>.git 	-> ì €ì¥ì†Œ URL ì¶”ê°€
+git remote delete <ì €ì¥ì†Œ ì´ë¦„> 		-> ì €ì¥ì†ŒURL ì‚­ì œ
+git remote set-url <ì €ì¥ì†Œ ì´ë¦„> <URL>.git 	-> ì €ì¥ì†Œ URL ìˆ˜ì •
 
-git status -> ¹Ù²ï°Å
+git status -> ë°”ë€ê±°
 
-git add <file name> -> ÀúÀå¼Ò ¿Ã¸± ÁØºñ
-git add . -> ¸ğµÎ ¿Ã¸®±â
-git commit -m "Ä¿¹Ô ³»¿ë" -> addÇÑ ¼öÁ¤µÈ ÆÄÀÏÀ» ÀúÀå¼Ò¿¡ ¿Ã¸® °ÍÀ» È®Á¤
+git add <file name> -> ì €ì¥ì†Œ ì˜¬ë¦´ ì¤€ë¹„
+git add . -> ëª¨ë‘ ì˜¬ë¦¬ê¸°
+git commit -m "ì»¤ë°‹ ë‚´ìš©" -> addí•œ ìˆ˜ì •ëœ íŒŒì¼ì„ ì €ì¥ì†Œì— ì˜¬ë¦¬ ê²ƒì„ í™•ì •
 
-git push <ÀúÀå¼Ò ÀÌ¸§> master -> ±êÇãºê¿¡ ÀúÀå
+git push <ì €ì¥ì†Œ ì´ë¦„> master -> ê¹ƒí—ˆë¸Œì— ì €ì¥
 
-git pull < ÀúÀå¼Ò ÀÌ¸§> master -> ¹Ş¾Æ¿À±â
+git pull < ì €ì¥ì†Œ ì´ë¦„> master -> ë°›ì•„ì˜¤ê¸°
