@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>event emit</title>
+	<style>
+		button {
+			border:none;
+			background-color: whitesmoke;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<!-- <app-header v-on: 하위 커포넌트에서 발생한 이벤트 이름=" 상위컴포넌트의 메서드 이름"></app-header> -->
+		<app-header v-on:pass="logText"></app-header>
+		<app-content v-on:add="addNum"></app-content>
+		<app-num v-bind:propsdata='num'></app-num>
+		<h3>{{ num }} 위에건 프롭스</h3>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+
+
+		var appHeader = {
+			template: '<button v-on:click="passEvent">Click me</button>',
+			methods: {
+				passEvent: function () {
+					this.$emit('pass');
+				}
+			}
+		}
+		var appContent = {
+			template: '<button v-on:click="addNumber">add</button>',
+			methods: {
+				addNumber: function () {
+					this.$emit('add')
+				}
+			}
+		}
+		var appNum = {
+			template: '<h3>{{ propsdata }}</h3>',
+			props: ['propsdata']
+		}
+		var vm = new Vue({
+			el: '#app',
+			components: {
+				'app-header': appHeader,
+				'app-content': appContent,
+				'app-num': appNum,
+			},
+			methods: {
+				logText: function () {
+					console.log(this.num);
+
+				},
+				addNum: function () {
+					this.num++;
+				}
+			},
+			data: {
+				num: 0
+			}
+		})
+	</script>
+</body>
+
+</html>

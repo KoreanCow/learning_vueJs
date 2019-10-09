@@ -1,2 +1,4 @@
 # Vue_Study
-안녕하세요! 한우혁입니당!
+Vue.js 시작하기 - Age of Vue.js 
+https://www.inflearn.com/course/Age-of-Vuejs#
+븎븎
