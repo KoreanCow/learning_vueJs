@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <p v-bind:id='uuid' v-bind:class='name'>{{ num }}</p>
+        <p>{{ doubleNum }}</p>
+        <div v-if='loading'>
+            Loading...
+            if는 아예 제거 해버림
+        </div>
+        <div v-else>
+            test user login has been logged in
+        </div>
+        <div v-show='loading'>
+            Loading....
+            show는 style로 숨김
+            DOM에서는 존재함
+        </div>
+        <input v-model='message' placeholder="hi!">
+        <p>message is : {{ message }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                num: 10,
+                uuid: 'abc1234',
+                name: 'text-blue',
+                loading: true,
+                message: '',
+            },
+            computed: {
+                doubleNum: function() {
+                    return this.num *2;
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>
